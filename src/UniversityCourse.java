@@ -23,6 +23,11 @@ public class UniversityCourse {
             this.studentNames.add(studentNames[i]);
         }
     }
+    public void drop(String studentName){
+
+        this.studentNames.remove(studentName);
+
+    }
 
     public boolean isRegistered(String studentName){
         return this.studentNames.contains(studentName);
