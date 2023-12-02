@@ -23,6 +23,13 @@ public class UniversityCourse {
             this.studentNames.add(studentNames[i]);
         }
     }
+    public void drop(String studentName){
+        if(studentName == null || !isRegistered(studentName)){
+            throw new IllegalArgumentException();
+        }
+        this.studentNames.remove(studentName);
+
+    }
 
     public boolean isRegistered(String studentName){
         return this.studentNames.contains(studentName);

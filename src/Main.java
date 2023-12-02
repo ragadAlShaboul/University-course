@@ -11,7 +11,7 @@ public class Main {
         String[] students={"ragad","samiah","mohammad"};
         UniversityCourse un =new UniversityCourse("Java","Fahed");
         un.register(students);
-
+        un.drop("Leen");
         System.out.println(un.getNumberOfRegisteredStudents());
         System.out.println(un.isRegistered("ragad"));
 
